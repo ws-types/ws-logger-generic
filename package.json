@@ -1,6 +1,6 @@
 {
   "name": "ws-logger-generic",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "the logger instance of logger-service for all es5 javascript and typescript.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
