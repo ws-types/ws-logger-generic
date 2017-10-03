@@ -1,4 +1,6 @@
 # ws-logger-generic : Logger  for ES5 javascript and typescript
+ [![Build Status](https://travis-ci.org/ws-types/ws-logger-generic.svg?branch=master)](https://travis-ci.org/ws-types/ws-logger-generic)
+ 
 the logger instance of logger-service for all es5 javascript and typescript
 
 This is a library to make logger more powerful. 
