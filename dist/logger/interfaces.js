@@ -36,3 +36,4 @@ exports.DefaultLogStyles = [
         stamp: "font-size:0.6em;font-family:'Century Gothic';line-height:1.5;"
     }
 ];
+//# sourceMappingURL=interfaces.js.map

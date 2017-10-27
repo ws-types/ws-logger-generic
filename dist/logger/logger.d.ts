@@ -6,7 +6,7 @@ export declare class Logger<T> implements ILogger {
     private _module;
     private _styles;
     LogStyles: LogStyle[];
-    constructor(config: LOGGER_SERVICE_CONFIG, typeMeta: Function);
+    constructor(config: LOGGER_SERVICE_CONFIG, typeMeta: Function | string);
     SetModule: <T>(_module: string) => Logger<T>;
     SetLogStyle: <T>(type: LogType, style: LogStyle) => Logger<T>;
     SetLogStyles: <T>(styles: LogStyle[]) => Logger<T>;

@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var interfaces_1 = require("./interfaces");
 var ws_regex_1 = require("ws-regex");
-var Logger = (function () {
+var Logger = /** @class */ (function () {
     function Logger(config, typeMeta) {
         var _this = this;
         this.config = config;
@@ -78,7 +78,7 @@ var Logger = (function () {
             };
             return printLogs(container);
         };
-        this._comp = ws_regex_1.Regex.Create(/function (.+?)\(.+/i).Matches(typeMeta.toString(), ['FNCM'])['FNCM'];
+        this._comp = typeof (typeMeta) === 'string' ? typeMeta : ws_regex_1.Regex.Create(/function (.+?)\(.+/i).Matches(typeMeta.toString(), ['FNCM'])['FNCM'];
         if (config.styles) {
             this._styles = config.styles;
         }
@@ -111,3 +111,4 @@ var printLogs = function (contr) {
 // console.log('--------------------------------------')
 // logger.Debug(9654312, 'method');
 // console.log('--------------------------------------')
+//# sourceMappingURL=logger.js.map

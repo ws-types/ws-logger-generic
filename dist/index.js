@@ -7,3 +7,4 @@ exports.LogType = interfaces_1.LogType;
 exports.DefaultLogStyles = interfaces_1.DefaultLogStyles;
 var logger_1 = require("./logger/logger");
 exports.Logger = logger_1.Logger;
+//# sourceMappingURL=index.js.map

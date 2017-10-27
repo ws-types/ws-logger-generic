@@ -11,8 +11,8 @@ export class Logger<T> implements ILogger {
     public get LogStyles() { return this._styles; }
     public set LogStyles(value: LogStyle[]) { this._styles = value; }
 
-    constructor(private config: LOGGER_SERVICE_CONFIG, typeMeta: Function) {
-        this._comp = Regex.Create(/function (.+?)\(.+/i).Matches(typeMeta.toString(), ['FNCM'])['FNCM'];
+    constructor(private config: LOGGER_SERVICE_CONFIG, typeMeta: Function | string) {
+        this._comp = typeof (typeMeta) === 'string' ? typeMeta : Regex.Create(/function (.+?)\(.+/i).Matches(typeMeta.toString(), ['FNCM'])['FNCM'];
         if (config.styles) {
             this._styles = config.styles;
         }

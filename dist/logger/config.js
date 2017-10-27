@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 // tslint:disable-next-line:class-name
-var LOGGER_SERVICE_CONFIG = (function () {
+var LOGGER_SERVICE_CONFIG = /** @class */ (function () {
     function LOGGER_SERVICE_CONFIG(Level, IsProduction, styles) {
         if (Level === void 0) { Level = 0; }
         if (IsProduction === void 0) { IsProduction = false; }
@@ -12,3 +12,4 @@ var LOGGER_SERVICE_CONFIG = (function () {
     return LOGGER_SERVICE_CONFIG;
 }());
 exports.LOGGER_SERVICE_CONFIG = LOGGER_SERVICE_CONFIG;
+//# sourceMappingURL=config.js.map
